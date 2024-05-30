@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>My portfolio</title>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+	<section class="welcome" id="home">
+    <div class="container">
+        <header class="header">
+	<div class="container header__container">
+		<a class="header__logo" href="/"><img src="./img/logo.png" alt="logo"></a>
+		<div class="header__nav">
+			<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+			<ul class="header__ul" id="headerUl">
+				<li class="header__li"><a class="header__a active" href="#home">Home</a></li>
+				<li class="header__li"><a class="header__a" href="#about">About me</a></li>
+				<li class="header__li"><a class="header__a" href="#skills">Skills</a></li>
+				<li class="header__li"><a class="header__a" href="#projects">Projects</a></li>
+				<li class="header__li"><a class="header__a" href="#contacts">Contacts</a></li>
+				<span class="material-icons icon-close" onclick="navToggle()">close</span>
+				<div class="icon-dark" id="colorChangeIcon">
+					<span class="material-icons">
+						contrast
+					</span>
+				</div>
+			</ul>
+			<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+		</div>
+	</div>
+</header>
+        <div class="welcome__group ">
+            <div class="welcome__img slide-in-top"> <img src="./img/welcome/mariia.jpg" alt="Mariia"></div>
+            <div class="welcome__info slide-in-top2">
+                <p class="welcome__hi">Hi, I am</p>
+                <h1 class="welcome__name">Mariia Skrypnyk</h1>
+                <p class="welcome__profession">Junior Front-end Developer</p>
+                <a href="./img//Mariia Skrypnyk CV.pdf" class="btn welcome__btn bounce-top" download="Mariia Skrypnyk junior frontend developer .pdf">Download CV</a>
+            </div>
+        </div>
+    </div>
+</section> 
+	<section class="about text-center" id="about">
+    <div class="container section">
+        <h3 class="title">About me</h3>
+        <p class="about__desc">I'm a beginner front-end developer with a strong passion for web development. I'm
+            finishing frontend development courses at Lemon School.</p>
+        <p class="about__desc">I'm collaborating on exciting projects and eager to apply my growing skills to real-world
+            challenges. Whether it's building responsive layouts, implementing interactive features, or refining user
+            experiences. </p>
+        <p class="about__desc">
+            Feel free to reach out to me if you have any opportunities or questions. I'm ready to take on new
+            challenges!</p>
+    </div>
+    <img src="./img/svg/separatorBlack 2.svg" alt="separator">
+</section>
+	<section class="skills text-center padding-section" id="skills">
+    <div class="container section">
+        <h3 class="title">Skills</h3>
+        <p class="skills__using">USING NOW:</p>
+        <div class="skills__list">
+            <div class="skills__item">
+                <img class="skills__img" src="./img/skiils/html.svg" alt="html">
+                <p class="skills__desc">HTML</p>
+            </div>
+            <div class="skills__item">
+                <img class="skills__img" src="./img/skiils/css.svg" alt="css">
+                <p class="skills__desc">CSS</p>
+            </div>
+            <div class="skills__item">
+                <img class="skills__img" src="./img/skiils/saas.svg" alt="saas">
+                <p class="skills__desc">SAAS</p>
+            </div>
+            <div class="skills__item">
+                <img class="skills__img" src="./img/skiils/js.svg" alt="js">
+                <p class="skills__desc">JAVASCRIPT</p>
+            </div>
+            <div class="skills__item">
+                <img class="skills__img" src="./img/skiils/gulp.svg" alt="gulp">
+                <p class="skills__desc">GULP</p>
+            </div>
+            <div class="skills__item">
+                <img class="skills__img" src="./img/skiils/react.svg" alt="react">
+                <p class="skills__desc">REACT</p>
+            </div>
+            <div class="skills__item">
+                <img class="skills__img" src="./img/skiils/angular.svg" alt="angular">
+                <p class="skills__desc">ANGULAR</p>
+            </div>
+            <div class="skills__item">
+                <img class="skills__img" src="./img/skiils/github.svg" alt="github">
+                <p class="skills__desc">GITHUB</p>
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="projects text-center padding-section" id="projects">
+    <div class="container section">
+        <h3 class="title">Projects</h3>
+        <div class="projects__list">
+            <div class="projects__item">
+                <img class="projects__img" src="./img/projects/movie.jpg" alt="movie">
+                <h5 class="projects__title">Movie</h5>
+                <p class="projects__desc">Tech stack : <span>HTML, SASS, React</span></p>
+                <a class="projects__code" target="_blank" href="https://github.com/MSkrypnyk/LS-24"><svg width="20"
+                        height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z"
+                            fill="white" />
+                    </svg>View Code</a>
+            </div>
+            <div class="projects__item">
+                <img class="projects__img" src="./img/projects/coffee.jpg" alt="coffee">
+                <h5 class="projects__title">Coffee</h5>
+                <p class="projects__desc">Tech stack : <span>HTML, SASS, Angular, TypeScript</span></p>
+                <a class="projects__code" target="_blank" href="https://github.com/MSkrypnyk/LS-21">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z"
+                            fill="white" />
+                    </svg>View Code</a>
+            </div>
+            <div class="projects__item">
+                <img class="projects__img" src="./img/projects/zone.jpg" alt="zone">
+                <h5 class="projects__title">Zone</h5>
+                <p class="projects__desc">Tech stack : <span>HTML, SASS, JS, Animista</span></p>
+                <a class="projects__code" target="_blank" href="https://github.com/MSkrypnyk/LS-18">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z"
+                            fill="white" />
+                    </svg>View Code</a>
+            </div>
+            <div class="projects__item">
+                <img class="projects__img" src="./img/projects/organick.png" alt="organik">
+                <h5 class="projects__title">Organick</h5>
+                <p class="projects__desc">Tech stack : <span>HTML, SASS, React, team project</span></p>
+                <a class="projects__code" target="_blank" href="https://github.com/MSkrypnyk/LS-28">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z"
+                            fill="white" />
+                    </svg>View Code</a>
+            </div>
+            <div class="projects__item">
+                <img class="projects__img" src="./img/projects/portfolio.jpg" alt="portfolio">
+                <h5 class="projects__title">Landing page for portfolio</h5>
+                <p class="projects__desc">Tech stack : <span>HTML, SASS</span></p>
+                <a class="projects__code" target="_blank" href="https://github.com/MSkrypnyk/LS-15">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z"
+                            fill="white" />
+                    </svg>View Code</a>
+            </div>
+            <div class="projects__item">
+                <img class="projects__img" src="./img/projects/portfolio2.jpg" alt="portfolio">
+                <h5 class="projects__title">Portfolio</h5>
+                <p class="projects__desc">Tech stack : <span>HTML, SASS, React, team project</span></p>
+                <a class="projects__code" target="_blank" href="https://github.com/MSkrypnyk/LS-27">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z"
+                            fill="white" />
+                    </svg>View Code</a>
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="contacts text-center padding-section" id="contacts">
+    <div class="container section">
+        <h3 class="title contacts__title">Contacts</h3>
+        <p class="contacts__welcome">Want to know more or just chat? <br> You are welcome?</p>
+        <div class="contacts__info">
+            <div class="contacts__social">
+                <a class="contacts__link" href="tel:+380969887605">
+                    <img class="contacts__img" src="./img/contacts/telephone.svg" alt="phone">
+                    096-98-87-605
+                </a>
+                <a class="contacts__link" href="mailto:mariya0skrypnyk@gmail.com">
+                    <img class="contacts__img" src="./img/contacts/mail.svg" alt="mail">
+                    mariya0skrypnyk
+                </a>
+            </div>
+            <div class="contacts__networks">
+                <a class="contacts__link" target="_blank" href="https://github.com/MSkrypnyk">
+                    <img class="contacts__img" src="./img/contacts/github.svg" alt="github">
+                </a>
+                <a class="contacts__link" target="_blank" href="https://www.linkedin.com/in/mariya-skrypnyk-119738310/">
+                    <img class="contacts__img" src="./img/contacts/linkedin.svg" alt="linkedin">
+                </a>
+                <a class="contacts__link" target="_blank" href="https://t.me/MARIIA22S">
+                    <img class="contacts__img" src="./img/contacts/telegram.svg" alt="telegram">
+                </a>
+                <a class="contacts__link" target="_blank" href="https://www.instagram.com/m_miaw0">
+                    <img class="contacts__img" src="./img/contacts/instagram.svg" alt="instagram">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+	<footer class="footer ">
+	<div class="container footer__info">
+		<a class="footer__logo" href="#home"><img src="./img/logo.png" alt="logo"></a>
+		<div class="footer__copyright" id="current-year">&copy; <span id="year-placeholder"></span> Mariia Skrypnyk</div>
+	</div>
+	<button class="btn scroll-to-top"><span class="material-icons">arrow_upward</span></button>
+</footer>
+	<script src="./js/index.bundle.js"></script>
+	<script>
+		function navToggle() {
+			document.getElementById("headerUl").classList.toggle("_active");
+			document.getElementById("headerBackdrop").classList.toggle("_active");
+		}
+		function getCurrentYear() {
+			return new Date().getFullYear();
+		}
+		function updateCurrentYear() {
+			const yearElement = document.getElementById("year-placeholder");
+			const currentYear = getCurrentYear();
+			yearElement.textContent = currentYear;
+		}
+		window.onload = updateCurrentYear;
+		const elements = document.querySelectorAll(".section");
+		const fadeInElements = () => {
+			elements.forEach((el) => {
+				const elementTop = el.getBoundingClientRect().top;
+				const isVisible = elementTop - window.innerHeight < 0;
+
+				if (isVisible) {
+					el.classList.add("show");
+				}
+			});
+		};
+		document.addEventListener("scroll", fadeInElements);
+		const scrollToTop = () => {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			});
+		};
+		const topButton = document.querySelector(".scroll-to-top");
+		topButton.addEventListener("click", scrollToTop);
+
+		let isColorChanged = false;
+
+		document.getElementById('colorChangeIcon').addEventListener('click', function () {
+			let root = document.documentElement;
+
+			if (!isColorChanged) {
+				root.style.setProperty('--bg-header', 'var(--bg-header-light)');
+				root.style.setProperty('--bg-primary', 'var(--bg-primary-light)');
+				root.style.setProperty('--bg-secondary', 'var(--bg-secondary-light)');
+				root.style.setProperty('--bg-item', 'var(--bg-item-light)');
+				root.style.setProperty('--bg-btn', 'var(--bg-btn-light)');
+				root.style.setProperty('--bg-gradient', 'var(--bg-gradient-light)');
+				root.style.setProperty('--c-primary', 'var(--c-primary-light)');
+				root.style.setProperty('--c-secondary', 'var(--c-secondary-light)');
+				root.style.setProperty('--c-text-white', 'var(--c-text-white-light)');
+				root.style.setProperty('--c-text-black', 'var(--c-text-black-light)');
+				isColorChanged = true;
+			} else {
+				root.style.setProperty('--bg-header', 'var(--bg-header-dark)');
+				root.style.setProperty('--bg-primary', 'var(--bg-primary-dark)');
+				root.style.setProperty('--bg-secondary', 'var(--bg-secondary-dark)');
+				root.style.setProperty('--bg-item', 'var(--bg-item-dark)');
+				root.style.setProperty('--bg-btn', 'var(--bg-btn-dark)');
+				root.style.setProperty('--bg-gradient', 'var(--bg-gradient-dark)');
+				root.style.setProperty('--c-primary', 'var(--c-primary-dark)');
+				root.style.setProperty('--c-secondary', 'var(--c-secondary-dark)');
+				root.style.setProperty('--c-text-white', 'var(--c-text-white-dark)');
+				root.style.setProperty('--c-text-black', 'var(--c-text-black-dark)');
+				isColorChanged = false;
+			}
+		});
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.footer {
+  padding: 10rem 0;
+  background: var(--bg-gradient);
+  
+&__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+&__logo img {
+  max-width: 70rem;
+  height: auto;
+}
+  &__copyright {
+    color: var(--c-text-white);
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 14rem;
+  }
+}

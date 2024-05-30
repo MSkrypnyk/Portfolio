@@ -1,0 +1,64 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Open Sans", sans-serif;
+  --third-family: "Raleway", sans-serif;
+  --transition: 0.2s all ease-in-out;
+  --box-shadow: 2rem 2rem 100rem 0 rgba(0, 0, 0, 0.2);
+  --box-shadow-img: 0 5rem 30rem rgba(0, 0, 0, 0.8);
+
+  --bg-primary: #191919;
+  --bg-secondary: #b4b4b4;
+  --bg-header: rgba(0, 0, 0, 0.7);
+  --bg-backdrop: rgba(0, 0, 0, 0.5);
+  --bg-item: #363636;
+  --bg-btn: #010101;
+  --bg-gradient: linear-gradient(
+    90deg,
+    rgba(232, 232, 232, 1) 1%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  --c-primary: #a7a7a7;
+  --c-secondary: #ccc;
+  --c-text-white: #fff;
+  --c-text-black: #000;
+  --c-social: #2e2d2d;
+
+  --border-radius-img: 20rem 20rem 0 0;
+
+  --bg-header-dark: rgba(0, 0, 0, 0.7);
+  --bg-primary-dark: #191919;
+  --bg-secondary-dark: #b4b4b4;
+  --bg-item-dark: #363636;
+  --bg-btn-dark: #010101;
+  --bg-gradient-dark: linear-gradient(
+    90deg,
+    rgba(232, 232, 232, 1) 1%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  --c-primary-dark: #a7a7a7;
+  --c-secondary-dark: #ccc;
+  --c-text-white-dark: #fff;
+  --c-text-black-dark: #000;
+
+  --bg-header-light: rgba(198, 198, 198, 0.7);
+  --bg-primary-light: #ebebeb;
+  --bg-secondary-light: #fffcfc;
+  --bg-item-light: #a8a8a8;
+  --bg-btn-light: #fdfdfd;
+  --bg-gradient-light: linear-gradient(
+    90deg,
+    rgba(232, 232, 232, 1) 1%,
+    rgba(133, 125, 125, 1) 100%
+  );
+  --c-primary-light: #262626;
+  --c-secondary-light: #6a6868;
+  --c-text-white-light: #000000;
+  --c-text-black-light: #4b4a4a;
+}

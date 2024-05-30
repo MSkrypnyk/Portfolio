@@ -1,0 +1,22 @@
+<header class="header">
+	<div class="container header__container">
+		<a class="header__logo" href="/"><img src="./img/logo.png" alt="logo"></a>
+		<div class="header__nav">
+			<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+			<ul class="header__ul" id="headerUl">
+				<li class="header__li"><a class="header__a active" href="#home">Home</a></li>
+				<li class="header__li"><a class="header__a" href="#about">About me</a></li>
+				<li class="header__li"><a class="header__a" href="#skills">Skills</a></li>
+				<li class="header__li"><a class="header__a" href="#projects">Projects</a></li>
+				<li class="header__li"><a class="header__a" href="#contacts">Contacts</a></li>
+				<span class="material-icons icon-close" onclick="navToggle()">close</span>
+				<div class="icon-dark" id="colorChangeIcon">
+					<span class="material-icons">
+						contrast
+					</span>
+				</div>
+			</ul>
+			<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+		</div>
+	</div>
+</header>

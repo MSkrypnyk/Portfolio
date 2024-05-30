@@ -1,0 +1,85 @@
+html {
+  font-size: 1px;
+  scroll-behavior: smooth;
+  @include tablet {
+    font-size: 0.9px;
+  }
+  @include tablet {
+    font-size: 0.8px;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 16rem;
+  font-family: var(--font-family);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  color: var( --c-text-white);
+}
+.container {
+  max-width: 1140px;
+  margin-inline: auto;
+  padding: 0 20rem;
+}
+
+.title {
+  font-size: 25rem;
+  line-height: 128%;
+  letter-spacing: 0.36em;
+  color: var(--c-secondary);
+  padding: 7rem;
+  display: inline-block;
+  margin-bottom: 20rem;
+}
+
+a {
+  color: var(--c-primary);
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 18rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.padding-section {
+  padding: 40rem 0;
+  @include mobile {
+    padding: 30rem 0;
+  }
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(50px); 
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 40rem;
+  right: 20rem;
+  background-color: var(-c-text-black);
+  padding: 4rem 7rem;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.scroll-to-top:hover {
+  background-color: var(--c-primary);
+}
+
+.material-icons {
+  color: var(-c-text-black);
+  cursor: pointer;
+}
+

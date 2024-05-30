@@ -1,0 +1,16 @@
+.about {
+  background: var(--bg-primary);
+  padding-top: 40rem;
+}
+.about__desc {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 18rem;
+  line-height: 139%;
+  text-align: center;
+  color: var(--c-primary);
+  margin-bottom: 15rem;
+  &:nth-child(4) {
+    margin-bottom: 40rem;
+  }
+}

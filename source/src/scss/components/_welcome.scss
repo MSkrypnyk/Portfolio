@@ -1,0 +1,74 @@
+.welcome {
+  background: var(--bg-gradient);
+  padding-bottom: 50rem;
+  @include mobile {
+    flex-direction: column;
+    padding-bottom: 30rem;
+  }
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20rem;
+    margin-top: 20rem;
+    max-width: 950rem;
+    margin-inline: auto;
+    margin-top: 100rem;
+    padding: 30rem;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    border-right: 2rem solid var(--c-text-black);
+    border-top: 2rem solid var(--c-text-white);
+    border-top-right-radius: 15rem;
+    padding: 30rem;
+  }
+
+  &__img {
+    max-width: 250rem;
+    height: auto;
+    border-radius: 15rem;
+    border-radius: 15rem;
+    box-shadow: var(--box-shadow-img);
+  }
+  &__img img {
+    border-radius: 15rem;
+  }
+
+  &__hi {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 25rem;
+    margin-bottom: 30rem;
+  }
+
+  &__name {
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 40rem;
+    text-align: center;
+    margin-bottom: 15rem;
+    color: var(--c-primary);
+  }
+
+  &__profession {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 20rem;
+    margin-bottom: 20rem;
+  }
+
+  &__btn {
+    background-color: var(--bg-btn);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 15rem;
+    text-align: center;
+    color: var( --c-text-white);
+    padding: 10rem 20rem;
+    border-radius: 5rem;
+  }
+}

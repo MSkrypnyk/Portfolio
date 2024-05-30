@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>My portfolio</title>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+	@@include('blocks/welcome.html')
+	@@include('blocks/about.html')
+	@@include('blocks/skills.html')
+	@@include('blocks/projects.html')
+	@@include('blocks/contacts.html')
+	@@include('blocks/footer.html')
+	<script src="./js/index.bundle.js"></script>
+	<script>
+		function navToggle() {
+			document.getElementById("headerUl").classList.toggle("_active");
+			document.getElementById("headerBackdrop").classList.toggle("_active");
+		}
+		function getCurrentYear() {
+			return new Date().getFullYear();
+		}
+		function updateCurrentYear() {
+			const yearElement = document.getElementById("year-placeholder");
+			const currentYear = getCurrentYear();
+			yearElement.textContent = currentYear;
+		}
+		window.onload = updateCurrentYear;
+		const elements = document.querySelectorAll(".section");
+		const fadeInElements = () => {
+			elements.forEach((el) => {
+				const elementTop = el.getBoundingClientRect().top;
+				const isVisible = elementTop - window.innerHeight < 0;
+
+				if (isVisible) {
+					el.classList.add("show");
+				}
+			});
+		};
+		document.addEventListener("scroll", fadeInElements);
+		const scrollToTop = () => {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			});
+		};
+		const topButton = document.querySelector(".scroll-to-top");
+		topButton.addEventListener("click", scrollToTop);
+
+		let isColorChanged = false;
+
+		document.getElementById('colorChangeIcon').addEventListener('click', function () {
+			let root = document.documentElement;
+
+			if (!isColorChanged) {
+				root.style.setProperty('--bg-header', 'var(--bg-header-light)');
+				root.style.setProperty('--bg-primary', 'var(--bg-primary-light)');
+				root.style.setProperty('--bg-secondary', 'var(--bg-secondary-light)');
+				root.style.setProperty('--bg-item', 'var(--bg-item-light)');
+				root.style.setProperty('--bg-btn', 'var(--bg-btn-light)');
+				root.style.setProperty('--bg-gradient', 'var(--bg-gradient-light)');
+				root.style.setProperty('--c-primary', 'var(--c-primary-light)');
+				root.style.setProperty('--c-secondary', 'var(--c-secondary-light)');
+				root.style.setProperty('--c-text-white', 'var(--c-text-white-light)');
+				root.style.setProperty('--c-text-black', 'var(--c-text-black-light)');
+				isColorChanged = true;
+			} else {
+				root.style.setProperty('--bg-header', 'var(--bg-header-dark)');
+				root.style.setProperty('--bg-primary', 'var(--bg-primary-dark)');
+				root.style.setProperty('--bg-secondary', 'var(--bg-secondary-dark)');
+				root.style.setProperty('--bg-item', 'var(--bg-item-dark)');
+				root.style.setProperty('--bg-btn', 'var(--bg-btn-dark)');
+				root.style.setProperty('--bg-gradient', 'var(--bg-gradient-dark)');
+				root.style.setProperty('--c-primary', 'var(--c-primary-dark)');
+				root.style.setProperty('--c-secondary', 'var(--c-secondary-dark)');
+				root.style.setProperty('--c-text-white', 'var(--c-text-white-dark)');
+				root.style.setProperty('--c-text-black', 'var(--c-text-black-dark)');
+				isColorChanged = false;
+			}
+		});
+
+	</script>
+</body>
+
+</html>

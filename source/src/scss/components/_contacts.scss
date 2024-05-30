@@ -1,0 +1,52 @@
+.contacts {
+  background: var(--bg-secondary);
+  &__title {
+    color: var(--c-text-black);
+  }
+
+  &__welcome {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 15rem;
+    line-height: 139%;
+    color: var(--c-text-black);
+    margin-bottom: 30rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20rem;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    color: var(--c-social);
+  }
+
+  &__img {
+    width: 28rem;
+    height: 28rem;
+  }
+
+  &__networks {
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+  }
+}
